@@ -1,7 +1,9 @@
 import express from "express";
 import articles from "../data/articles.js";
+import axios from "axios";
 
 const router = express.Router();
+
 
 router.get("/", (req, res) => {
   res.render("index", { title: "Listing", articles });
